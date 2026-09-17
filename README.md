@@ -52,7 +52,9 @@ Here is the result of two AXI4 Masters and one AXI4 Slave with BRAM connected vi
 ## Interconnect Block Diagram
 
 
-<img width="1513" height="795" alt="image" src="https://github.com/user-attachments/assets/9a2b7b67-3455-4bdc-a255-a50a7aefe820" />
+
+<img width="1730" height="909" alt="image" src="https://github.com/user-attachments/assets/d8f1945e-7f0a-4e09-8648-b18d98a1fcdf" />
+
 
 **AXI4 Interconnect Arbitration**
 
