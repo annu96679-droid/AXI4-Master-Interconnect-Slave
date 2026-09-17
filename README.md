@@ -14,23 +14,23 @@ Interconnect granting 20 turns to the two Masters each to access the BRAM Slave 
 
 **Here are some features of this implementaion:**
 
-* 1. Master can initiate and perform read and write transactions at the same time.
+* Master can initiate and perform read and write transactions at the same time.
 
-* 2. The data transation doesn't proceed unless the handshake is successful in the address channel(s).
+* The data transation doesn't proceed unless the handshake is successful in the address channel(s).
 
-* 3. In both read and write channels, the requested data is available with a maximum delay of 2 clock cycles after the ARVALID/AWVALID signal has been asserted by the master.
+* In both read and write channels, the requested data is available with a maximum delay of 2 clock cycles after the ARVALID/AWVALID signal has been asserted by the master.
 
-* 4. Each channel has its own IDs to keep track of both address and data transactions.
+* Each channel has its own IDs to keep track of both address and data transactions.
 
-* 5. Data can be resumed without losing it if the receiving side suddenly drops their RREADY/WREADY signals.
+* Data can be resumed without losing it if the receiving side suddenly drops their RREADY/WREADY signals.
 
-* 6. All the burst modes such as FIXED, INCREMENT, and WRAP addressing modes are supported.
+* All the burst modes such as FIXED, INCREMENT, and WRAP addressing modes are supported.
 
-* 7. The design also contains an active low global reset signal as per specs.
+* The design also contains an active low global reset signal as per specs.
 
-* 8. The interconnect provides a simple scheduling to deal with multiple masters interfacing with a single slave and the algorithm can be easily scaled in case of more masters.
+* The interconnect provides a simple scheduling to deal with multiple masters interfacing with a single slave and the algorithm can be easily scaled in case of more masters.
 
-* 9. As suggessted by the AXI4 specification, the VALID signal in any of the channels doesn't wait for the respective READY signal to be asserted HIGH. READY signals are asserted HIGH by defautlt to prevent wasting any clock cycles.
+* As suggessted by the AXI4 specification, the VALID signal in any of the channels doesn't wait for the respective READY signal to be asserted HIGH. READY signals are asserted HIGH by defautlt to prevent wasting any clock cycles.
  
 **Link to the original AXI4 specifications document:**
 
