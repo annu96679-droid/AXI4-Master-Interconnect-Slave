@@ -98,7 +98,7 @@ implementation**.
 ### References
 
 - [Arm AMBA AXI3 and AXI4 Protocol Specification](https://developer.arm.com/documentation/ihi0022/e/AMBA-AXI3-and-AXI4-Protocol-Specification)
-- [AXI4 Master–Interconnect–Slave Reference Repository](https://github.com/hizbi-github/AXI4_Master_Interconnect_Slave)
+
 
 ---
 
